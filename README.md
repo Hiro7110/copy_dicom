@@ -14,10 +14,11 @@ DICOM編集ツールで手作業で修正も可能だがめんどうなので自
 
 ## Specification
 
-- originalフォルダ内に複製したいDICOMファイルを置く。
-ただしDICOMファイルは一意のStudyInstanceUIDとする。
-（複数のStudyInstanceUIDを持つファイルは置けない）
+- originalフォルダ内に複製したいDICOMファイルを置く
+    - ただしDICOMファイルは一意のStudyInstanceUIDとする
+    - （複数のStudyInstanceUIDを持つファイルは置けない）
 - csvフォルダ内に変更内容を記載したcsvを置く
+    - csvファイルのヘッダーには変更したいDICOM_tagの名前またはtag_numberを記載する
 - copy_dicom.exeを実行
 - copiedフォルダ内に複製されたDICOMファイルが生成される
 
