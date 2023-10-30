@@ -40,7 +40,7 @@ def modify_dicom(dicom_dir, headers, config, output):
         header_3 = dicom_data.get(headers[2], f"{headers[2]}not found")
         header_4 = dicom_data.get(headers[3], f"{headers[3]}not found")
         series = str(dicom_data.get("SeriesNumber", "series_num not found"))
-        image = str(dicom_data.get("InstanceNumber", "instance_num not found"))
+        image = dicom_data.get(0x00200013, "instance_num not found").value
         print(f"File: {dicom_path}, {headers[0]}: {header_1},  {headers[1]}: {header_2}, {headers[2]}: {header_3}, {headers[3]}: {header_4},")
 
         # 現在のDICOMのheader情報を取得
