@@ -28,6 +28,6 @@ DICOM編集ツールで手作業で修正も可能だがめんどうなので自
 
 ### Module
 
-- pip 23.3.1
-- pydicom 2.4.3
-- 
+- pip           23.3.1
+- pydicom       2.4.3
+- pyinstaller   6.1.0
